@@ -1,0 +1,19 @@
+{
+  "name": "accordion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass scss/app.scss css/style.css --watch --no-source-map --style compressed",
+    "devstart": "live-server --browser=firefox",
+    "start": "npm-run-all --parallel watch:sass devstart",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.2"
+  }
+}

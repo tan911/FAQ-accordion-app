@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./js/app.js"></script>
+    <title>Frontendmentor | FAQ accordion</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="image__container">
+          <img class="primary__image" src="./svg/bg-pattern-desktop.svg" alt="">
+          <img class="secondary__image" src="./svg/illustration-woman-online-desktop.svg" alt="">
+          <img class="tertiary__image" src="./svg/illustration-box-desktop.svg" alt="">
+      </div>
+      <div class="accordion">
+        <h2 class="accordion__title">FAQ</h2>
+        <div class="accordion__heading__container">
+          <h3>
+            <button
+              id="accordion__one"
+              class="accordion__btn"
+              type="button"
+              aria-expanded="true"
+              aria-controls="accordion__one__content"
+            >
+              <span>How many team members can I invite?</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </h3>
+            <div
+              id="accordion__one__content"
+              class="accordion__content"
+              aria-hidden="true"
+              aria-labelledby="accordion__one"
+            >
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+        </div>
+        <div class="accordion__heading__container">
+          <h3>
+            <button
+              id="accordion__two"
+              class="accordion__btn"
+              type="button"
+              aria-expanded="true"
+              aria-controls="accordion__two__content"
+            >
+              <span>What is the maximum file upload size?</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </h3>
+          <div
+            id="accordion__two__content"
+            class="accordion__content"
+            aria-hidden="true"
+            aria-labelledby="accordion__two"
+          >
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__heading__container">
+          <h3>
+            <button
+              id="accordion__three"
+              class="accordion__btn"
+              type="button"
+              aria-expanded="true"
+              aria-controls="accordion__three__content"
+            >
+              <span>How do I reset my password?</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </h3>
+          <div
+            id="accordion__three__content"
+            class="accordion__content"
+            aria-hidden="true"
+            aria-labelledby="accordion__three"
+          >
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__heading__container">
+          <h3>
+            <button
+              id="accordion__four"
+              class="accordion__btn"
+              type="button"
+              aria-expanded="true"
+              aria-controls="accordion__four__content"
+            >
+              <span>Can I cancel my subscription?</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </h3>
+          <div
+            id="accordion__four__content"
+            class="accordion__content"
+            aria-hidden="true"
+            aria-labelledby="accordion__four"
+          >
+            <p>
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
+        </div>
+        <div class="accordion__heading__container">
+          <h3>
+            <button
+              id="accordion__three"
+              class="accordion__btn"
+              type="button"
+              aria-expanded="true"
+              aria-controls="accordion__three__content"
+            >
+              <span>Do you provide additional support?</span>
+              <svg aria-hidden="true" focusable="false" width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+            </button>
+          </h3>
+          <div
+            id="accordion__three__content"
+            class="accordion__content"
+            aria-hidden="true"
+            aria-labelledby="accordion__three"
+          >
+            <p>
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

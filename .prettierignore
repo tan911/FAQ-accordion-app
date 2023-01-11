@@ -1,0 +1,6 @@
+*.md
+*.json
+
+**/assets
+**/design
+**/svg
