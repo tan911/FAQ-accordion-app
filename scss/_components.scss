@@ -1,31 +1,36 @@
 .accordion__btn {
+    padding: 1rem 0;
     width: 100%;
-    text-align: left;
     background: none;
     border: none;
-    padding: 1rem 0;
+    border-bottom: 1px solid var(--deviders-color);
+    text-align: left;
     cursor: pointer;
-    border-bottom: 1px solid rgba(hsl(240, 6%, 50%), 0.3);
+    transition: all 0.3s;
+    position: relative;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    svg {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    // to rotate arrow
+    &[aria-expanded="true"] {
+        border-bottom: none;
+        svg {
+            transform: rotate(180deg);
+        }
+    }
 }
 
-.accordion__heading__container:hover .accordion__btn span {
-    color: var(--color-text-primary-red); 
+.accordion__btn:hover span {
+    color: var(--soft-red-text-color);
 }
 
-// .accordion__btn:focus {
-//     outline: none;
-//     background-color: var(--color-gradient-sb);
-
-//     & span {
-//         color: var(--color-dividers-lgb);
-//     }
-// }
-
-.accordion__content p {
-    padding: 1em 0;
+.accordion__btn:focus-visible {
+    outline: 0.2em dashed var(--blue-background-color);
+    outline-offset: 0.01rem;
 }
-

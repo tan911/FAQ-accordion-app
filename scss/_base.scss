@@ -78,13 +78,17 @@ h6 {
 ////
 
 :root {
-  --color-text-primary-db: hsl(238, 29%, 16%);
-  --color-text-primary-red: hsl(14, 88%, 65%);
-  --color-gradient-sv: hsl(273, 75%, 66%);
-  --color-gradient-sb: hsl(240, 73%, 65%);
-  --color-text-secondary-gb: hsl(237, 12%, 33%);
-  --color-text-secondary-dgb: hsl(240, 6%, 50%);
-  --color-dividers-lgb: hsl(240, 5%, 91%);
+  --dark-blue-text-color: hsl(238, 29%, 16%);
+  --soft-red-text-color: hsl(14, 88%, 65%);
+  --violet-bacground-color: hsl(273, 75%, 66%);
+  --blue-background-color: hsl(240, 73%, 65%);
+  --dark-grayish-blue-text-color: hsl(237, 12%, 33%);
+  --light-graysish-blue-text-color: hsl(240, 6%, 50%);
+  --deviders-color: hsl(240, 4%, 91%);
+  --card-background-color: hsl(0, 0%, 100%);
+
+  --space-x: 3rem;
+  --step-0: clamp(0.75rem, calc(1.07rem + -0.36vw), 1.00rem);
 }
 
 @font-face {
@@ -99,20 +103,35 @@ h6 {
 
 body {
   min-height: 100vh;
-  font-family: cusTomFontReg, sans-serif;
-  background-image: linear-gradient(var(--color-gradient-sv), var(--color-gradient-sb));
+  background-image: linear-gradient(var(--violet-bacground-color), var(--blue-background-color));
   display: grid;
   place-items: center;
+  font-size: var(--step-0);
 }
 
-h2 {
+.accordion__title {
   font-family: customFontBold, sans-serif;
-  font-size: 2rem;
-  margin-bottom: 1.5em;
-  color: var(--color-text-primary-db);
+  color: var(--dark-blue-text-color);
+  font-size: 30px;
+  margin-bottom: 1rem;
 }
 
-h3 button span {
+.accordion__heading__container .accordion__content[aria-hidden="false"] {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(hsl(240, 6%, 50%), 0.3);
+}
+
+.accordion__heading span {
+  font-family: customFontReg, sans-serif;
   font-weight: 200;
-  color: var(--color-text-primary-db);
+  color: var(--dark-blue-text-color);
+}
+
+.accordion__heading .accordion__btn[aria-expanded='true'] span {
+  font-family: customFontBold, sans-serif;
+}
+
+.accordion__content p {
+  font-family: customFontReg, sans-serif;
+  color: var(--light-graysish-blue-text-color);
 }

@@ -1,36 +1,27 @@
 @use './base' as font;
 
 .wrapper {
+    background-color: var(--card-background-color);
     width: 100%;
-    max-width: 80rem;
-    background-color: var(--color-dividers-lgb);
-    position: relative;
-    overflow: hidden;
+    max-width: 59.375rem;
+    border-radius: 25px;
+
+    // display: flex;
+    // justify-content: space-between;
+    // gap: var(--space-x);
+    // position: relative;
 }
 
-.image__container {
-    overflow: hidden;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    // top: -500px;
-    // left: -500px;
-}
+// .image__container {
+//     position: relative;
+//     width: 50%;
+//     overflow: hidden;
+//     // border: 1px solid blue;
+// }
 
-.secondary__image,
-.tertiary__image {
-    position: absolute;
-    top: 0;
-}
-
-.primary__image {
-    width: 100%;
-}
 
 .accordion {
-    width: 100%;
-    margin-left: auto;
     width: 50%;
-    padding: 5rem 10rem 5rem 0;
+    padding: 4rem 6rem 4rem 0
 }
 
