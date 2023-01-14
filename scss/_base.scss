@@ -101,12 +101,36 @@ h6 {
   src: url('../font/KumbhSans-Bold.ttf');
 }
 
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } 
+  }
+  @if $breakpoint == screen-s {
+    @media only screen and (max-width: 60.125em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == screen-m {
+    @media only screen and (max-width: 67.5em) {
+      @content;
+    }
+  }
+
+}
+
 body {
   min-height: 100vh;
   background-image: linear-gradient(var(--violet-bacground-color), var(--blue-background-color));
   display: grid;
   place-items: center;
   font-size: var(--step-0);
+
+  @include respond(screen-s) {
+    padding: 10rem 0;
+  }
 }
 
 .accordion__title {
