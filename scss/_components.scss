@@ -1,3 +1,5 @@
+@use './base' as queries;
+
 .accordion__btn {
     padding: 1rem 0;
     width: 100%;
@@ -11,10 +13,19 @@
 
     svg {
         position: absolute;
-        right: 30px;
+        right: 0;
         top: 0;
         bottom: 0;
         margin: auto 0;
+
+        @include queries.respond(screen-laptop) {
+             right: 30px;
+        }
+
+        @include queries.respond(screen-lg-up) {
+            right: 10px;
+        }
+    
     }
 
     // to rotate arrow
